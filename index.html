@@ -4,132 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>GM TECH | iPhones Novos e Seminovos em todo o Brasil !</title>
-    <meta name="description" content="A GM TECH é especialista em iPhones em todo o Brasil. Compre seu iPhone com garantia, procedência e o melhor atendimento via WhatsApp.">
-    <meta name="keywords" content="iPhone Jardim Coqueiro,GM TECH, GM TECH Passo Fundo, comprar iphone sao paulo, iphone seminovo com garantia, iphone">
+    <title>GM TECH | iPhones Novos e Seminovos em Jardim Coqueiro</title>
     
-    <meta property="og:title" content="GM TECH | iPhones de Qualidade">
-    <meta property="og:description" content="Confira nosso estoque de iPhones novos e seminovos em todo o Brasil.">
+    <meta name="description" content="Compre seu iPhone na GM TECH. Garantia total, melhores preços e parcelamento. Localizados na Rua Passo Fundo, 1669 - Jardim Coqueiro.">
+    
+    <meta name="keywords" content="iPhone, Apple, GM TECH, Jardim Coqueiro, iPhone barato, iPhone 11, iPhone 15, Celulares">
+    
+    <meta property="og:title" content="GM TECH - Especialista em iPhones">
+    <meta property="og:description" content="Confira nossas ofertas de iPhones com garantia e procedência.">
     <meta property="og:image" content="assets/img/logo.jpg">
 
-    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 <body>
-
-    <header class="header" id="header">
-        <nav class="container nav">
+    <header class="header">
+        <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.jpg" alt="Logo GM TECH">
-                <span>GM TECH</span>
+                <img src="assets/img/logo.jpg" alt="GM TECH Logo">
             </a>
             
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="produtos.html" class="nav-link">Ver Estoque</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">iPhones</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
-                <div class="nav-close" id="nav-close"><i class="ri-close-line"></i></div>
-            </div>
+            </nav>
 
-            <div class="nav-toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
-        </nav>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="hero section" id="home">
-            <div class="container hero-container">
-                <div class="hero-data">
-                    <h1 class="hero-title">O iPhone dos seus <br> <span>sonhos</span> na GM TECH.</h1>
-                    <p class="hero-description">
-                        Referência em qualidade e confiança. Atendimento exclusivo para quem busca o melhor da Apple em todo o Brasil.
-                    </p>
-                    <a href="produtos.html" class="button">Explorar Catálogo</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tecnologia Premium em suas mãos</h1>
+            <p>Os melhores iPhones com garantia e procedência você encontra na GM TECH.</p>
+            <a href="produtos.html" class="btn-cta">Ver Ofertas</a>
+        </div>
+    </section>
+
+    <section class="featured container">
+        <h2 class="section-title">Destaques da Semana</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://planoscelular.claro.com.br/medias/18246-0-zero-300Wx300H-productCard?context=bWFzdGVyfGltYWdlc3w2NjE0OXxpbWFnZS9wbmd8YURsbUwyZzJNeTg1TXpJd056YzBOVE16TVRVd0x6RTRNalEyWHpCZmVtVnliMTh6TURCWGVETXdNRWhmY0hKdlpIVmpkRU5oY21RfGNkZTFmN2I2YTYyMTFiYmMyMzc3MGM3ZTFiNTI2MWM0ZjQzZGVkNDg3ZmRlZTNhNzgzNmIxNmNjMWEzOTQzOGY" alt="iPhone 13"> 
                 </div>
-                <div class="hero-img">
-                    <img src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-14-pro-max-space-black-back.png" alt="iPhone GM TECH"> 
-                </div>
+                <h3>iPhone 13 128GB</h3>
+                <p class="price">R$ 2.290,00</p>
+                <button class="btn-buy" onclick="abrirModal('iPhone 13 128GB', 'R$ 2.290,00')">
+                    <i class="fas fa-shopping-bag"></i> Comprar
+                </button>
             </div>
-        </section>
 
-        <section class="about section" id="sobre">
-            <div class="container about-container" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center;">
-                <div class="about-data">
-                    <h2 class="section-title" style="text-align: left;">Sobre a GM TECH</h2>
-                    <p>Localizada no coração do Jardim Coqueiro, a <strong>GM TECH</strong> nasceu com o propósito de oferecer dispositivos Apple com transparência total. </p>
-                    <p style="margin-top: 1rem;">Trabalhamos com aparelhos novos e seminovos rigorosamente testados, garantindo que cada cliente tenha uma experiência premium do atendimento à entrega.</p>
-                    <div style="margin-top: 2rem; display: flex; gap: 1rem;">
-                        <i class="ri-checkbox-circle-fill" style="color: var(--yellow-color);"></i> Garantia em todos os aparelhos<br>
-                        <i class="ri-checkbox-circle-fill" style="color: var(--yellow-color);"></i> Pagamento Facilitado
-                    </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://importswb.com.br/wp-content/uploads/2022/10/iPhone-14-2.png" alt="iPhone 14 Pro">
                 </div>
-                <div class="about-img">
-                    <img src="assets/img/logo.jpg" alt="Sobre a GM TECH" style="border-radius: 1rem; border: 2px solid var(--yellow-color);">
-                </div>
+                <h3>iPhone 14 Pro 128GB</h3>
+                <p class="price">R$ 3.490,00</p>
+                <button class="btn-buy" onclick="abrirModal('iPhone 14 Pro 128GB', 'R$ 3.490,00')">
+                    <i class="fas fa-shopping-bag"></i> Comprar
+                </button>
             </div>
-        </section>
 
-        <section class="products section">
-            <h2 class="section-title">Nossos Destaques</h2>
-            <div class="container products-container" id="destaques-home">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-15-black.png?v=cc5784d1" alt="iPhone 15 Pro Max">
                 </div>
-        </section>
-        
-        <section class="contact section" id="contato">
-            <h2 class="section-title">Fale Conosco & Visite-nos</h2>
-            <div class="container contact-container">
-                
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="ri-whatsapp-line" style="color: #25D366; font-size: 2rem;"></i>
-                        <h3>WhatsApp</h3>
-                        <p>Dúvidas e Vendas:</p>
-                        <a href="https://wa.me/5511941583429" target="_blank" style="color: var(--yellow-color); font-weight: bold;">(11) 94158-3429</a>
-                    </div>
-
-                    <div class="contact-card" style="margin-top: 2rem;">
-                        <i class="ri-instagram-line" style="color: #E1306C; font-size: 2rem;"></i>
-                        <h3>Instagram</h3>
-                        <p>Siga para ver as novidades:</p>
-                        <a href="https://www.instagram.com/gmtech.iphones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: var(--yellow-color); font-weight: bold;">@gmtech.iphones</a>
-                    </div>
-
-                    <div class="contact-card" style="margin-top: 2rem;">
-                        <i class="ri-map-pin-line" style="color: var(--yellow-color); font-size: 2rem;"></i>
-                        <h3>Nosso Endereço</h3>
-                        <p>R. Passo Fundo, 1669 - Jardim Coqueiro</p>
-                    </div>
-                </div>
-
-                <div class="map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.326233488!2d-46.425!3d-23.593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69966b907f1d%3A0x6b4c3e8a5f8e0e6b!2sR.%20Passo%20Fundo%2C%201669%20-%20Jardim%20Coqueiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008431-150!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
-                        width="100%" height="350" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
+                <h3>iPhone 15 Pro Max 256GB</h3>
+                <p class="price">R$ 5.390,00</p>
+                <button class="btn-buy" onclick="abrirModal('iPhone 15 Pro Max 256GB', 'R$ 5.390,00')">
+                    <i class="fas fa-shopping-bag"></i> Comprar
+                </button>
             </div>
-        </section>
-    </main>
 
-    <footer class="footer section">
-        <div class="container footer-container">
-            <div style="margin-bottom: 2rem;">
-                <h3 style="color: var(--white-color);">GM TECH</h3>
-                <p>Especialista iPhone em todo o Brasil</p>
+        </div>
+    </section>
+
+    <div id="compraModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-cart"></i> Finalizar Pedido</h2>
+                <p id="produto-selecionado" style="color: #fff; font-weight: bold; margin-bottom: 10px;"></p>
             </div>
-            <p class="footer-copy">© 2025 GM TECH. Todos os direitos reservados.
+            <form id="form-compra">
+                <div class="form-group">
+                    <label>Seu Nome Completo:</label>
+                    <input type="text" id="cliente-nome" placeholder="Ex: João da Silva" required>
+                </div>
+                <div class="form-group">
+                    <label>Endereço de Entrega:</label>
+                    <input type="text" id="cliente-endereco" placeholder="Rua, Número e Bairro" required>
+                </div>
+                <div class="form-group">
+                    <label>Cor Preferida:</label>
+                    <input type="text" id="cliente-cor" placeholder="Ex: Titânio Natural">
+                </div>
+                <div class="form-group">
+                    <label>Forma de Pagamento:</label>
+                    <select id="cliente-pagamento">
+                        <option value="Pix">Pix (Desconto Especial)</option>
+                        <option value="Cartão até 12x">Cartão de Crédito (até 12x)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fab fa-whatsapp"></i> Enviar Pedido no WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container benefits-grid">
+            <div class="benefit-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Garantia Total</h3>
+                <p>Todos os aparelhos revisados e com garantia da loja.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Entrega Rápida</h3>
+                <p>Receba seu aparelho com segurança e agilidade.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-credit-card"></i>
+                <h3>Facilidade</h3>
+                <p>Parcelamos em até 12x no cartão.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>GM TECH</h3>
+                <p>Sua referência em produtos Apple. Garantia, procedência e o atendimento que você merece.</p>
+                <br>
+                <a href="https://www.instagram.com/gmtech.iphones" target="_blank" class="btn-instagram">
+                    <i class="fab fa-instagram"></i> Siga no Instagram
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+                    <li><a href="produtos.html"><i class="fas fa-chevron-right"></i> Ver iPhones</a></li>
+                    <li><a href="contato.html"><i class="fas fa-chevron-right"></i> Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Onde Estamos</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fab fa-whatsapp"></i> 
+                        <span>(11) 94158-3429<br><small>Atendimento Online</small></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>R. Passo Fundo, 1669<br>Jardim Coqueiro<br>São Paulo - SP</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GM TECH. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="assets/js/database.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            carregarDestaquesHome();
-        });
-    </script>
+    <a href="https://wa.me/5511941583429" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
