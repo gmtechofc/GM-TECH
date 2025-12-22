@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os Produtos | GM TECH</title>
+    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="container nav">
+            <div class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo GM TECH">
+                <span>GM TECH</span>
+            </div>
+            <a href="index.html" class="nav-link">Voltar ao Início</a>
+        </nav>
+    </header>
+
+    <main class="section container">
+        <h1 class="section-title">Nossos iPhones Disponíveis</h1>
+        
+        <div class="products-container" id="lista-produtos">
+            </div>
+    </main>
+
+    <script src="assets/js/database.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Script inline apenas para executar a função de carregar catálogo
+        document.addEventListener('DOMContentLoaded', carregarCatalogo);
+    </script>
+</body>
+</html>
