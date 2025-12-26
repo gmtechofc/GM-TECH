@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Localização | GM TECH</title>
+    
+    <meta name="description" content="Visite a GM TECH na R. Passo Fundo, 1669 - Jardim Coqueiro. Entre em contato pelo WhatsApp (11) 94158-3429.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Estilo Específico para esta página */
+        .contact-page { padding: 60px 0; }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background-color: var(--bg-card);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        .contact-details h2 { color: var(--primary-color); margin-bottom: 20px; }
+        .info-box { margin-bottom: 30px; }
+        .info-box h4 { color: #fff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .info-box p { color: #aaa; }
+        .map-container { width: 100%; height: 100%; min-height: 350px; border-radius: 10px; overflow: hidden; }
+        
+        @media(max-width: 768px) {
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/img/logo.jpg" alt="GM TECH"></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">iPhones</a></li>
+                    <li><a href="contato.html" style="color:var(--primary-color);">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="container contact-page">
+        <h1 class="section-title">Fale com a GM TECH</h1>
+        
+        <div class="contact-wrapper">
+            <div class="contact-details">
+                <h2>Canais de Atendimento</h2>
+                <p style="margin-bottom: 30px;">Tire suas dúvidas, faça orçamentos ou venha nos visitar.</p>
+
+                <div class="info-box">
+                    <h4><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</h4>
+                    <p>(11) 94158-3429</p>
+                    <a href="https://wa.me/5511941583429" target="_blank" style="color:var(--primary-color); font-weight:bold;">Clique para conversar</a>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fab fa-instagram" style="color:#E1306C;"></i> Instagram</h4>
+                    <p>@gmtech.iphones</p>
+                    <a href="https://www.instagram.com/gmtech.iphones" target="_blank" style="color:var(--primary-color); font-weight:bold;">Seguir perfil</a>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-map-marker-alt" style="color:#FFD700;"></i> Endereço</h4>
+                    <p>R. Passo Fundo, 1669</p>
+                    <p>Jardim Coqueiro - SP</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=R.+Passo+Fundo,+1669+-+Jardim+Coqueiro&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>GM TECH</h3>
+                <p>Sua referência em produtos Apple. Garantia, procedência e o atendimento que você merece.</p>
+                <br>
+                <a href="https://www.instagram.com/gmtech.iphones" target="_blank" class="btn-instagram">
+                    <i class="fab fa-instagram"></i> Siga no Instagram
+                </a>
+            </div>
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Ver iPhones</a></li>
+                    <li><a href="contato.html">Localização</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Onde Estamos</h3>
+                <ul class="contact-info">
+                    <li><i class="fab fa-whatsapp"></i> (11) 94158-3429</li>
+                    <li><i class="fas fa-map-marker-alt"></i> R. Passo Fundo, 1669 - Jd. Coqueiro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2025 GM TECH. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <a href="https://wa.me/5511941583429" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
