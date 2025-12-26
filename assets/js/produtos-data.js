@@ -31,9 +31,9 @@ const produtosLista = [
     { nome: "iPhone 15 Pro Max 512GB", preco: "R$ 5.590,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://conteudo.imguol.com.br/c/noticias/e2/2023/10/05/iphone-15-pro-transoarente-1696507867172_v2_300x420.png" },
 
     // --- LACRADOS / NOVOS ---
+    { nome: "iPhone 16 128GB (Lacrado)", preco: "R$ 4.990,00", cores: "Verde, Preto, Azul, Rose", img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-16-preto-1.png" },
     { nome: "iPhone 16 Pro 256GB (Lacrado)", preco: "R$ 5.590,00", cores: "Branco, Preto, Natural, Desert", img: "https://ss7.vzw.com/is/image/VerizonWireless/apple-iphone-16-pro-max-desert-titanium?wid=400&hei=400&fmt=webp-alpha" },
     { nome: "iPhone 16 Pro Max 256GB (Lacrado)", preco: "R$ 5.890,00", cores: "Branco, Preto, Natural, Desert", img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-16-pro-max-titanio-branco-700x700.png" },
-    { nome: "iPhone 16 128GB (Lacrado)", preco: "R$ 4.990,00", cores: "Verde, Preto, Azul, Rose", img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-16-preto-1.png" },
     
     // --- Linha 17 (Futuro/Pré-venda) ---
     { nome: "iPhone 17 256GB", preco: "R$ 6.890,00", cores: "Lavanda, Sálvia, Azul, Branco", img: "https://files.tecnoblog.net/wp-content/uploads/2025/09/iphone-17-azul-nevoa.png" },
