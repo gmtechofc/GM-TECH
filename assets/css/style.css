@@ -366,7 +366,8 @@ footer {
         display: block; /* Mostra o ícone de hambúrguer */
     }
 
-    .hero h1 { font-size: 2rem; }
+    .hero h1 { font-size: 1.2rem; }
+    .hero p { font-size: 1rem; }
     
     .footer-content {
         flex-direction: column;

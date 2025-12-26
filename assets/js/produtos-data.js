@@ -18,16 +18,16 @@ const produtosLista = [
 
     // --- iPhone 14 ---
     { nome: "iPhone 14 128GB", preco: "R$ 2.590,00", cores: "Branco, Preto, Azul, Rose", img: "https://wefix.co.za/cdn/shop/files/iphone-14_purple_1_2.png?v=1722949372" },
-    { nome: "iPhone 14 Pro 128GB", preco: "R$ 3.490,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://importswb.com.br/wp-content/uploads/2022/10/iPhone-14-2.png" },
-    { nome: "iPhone 14 Pro 512GB", preco: "R$ 3.790,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://compasia.com.ph/cdn/shop/files/iphone-14-pro-max-228886_800x.png?v=1737456748" },
-    { nome: "iPhone 14 Pro Max 128GB", preco: "R$ 4.990,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://elppastore.com.br/wp-content/uploads/2024/03/iphone-15.png" },
-    { nome: "iPhone 14 Pro Max 256GB", preco: "R$ 4.290,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://m.media-amazon.com/images/G/32/apple/NPI/Q1_23/Family_Stripe/iphone_14._CB595247783_.png" },
+    { nome: "iPhone 14 Pro 128GB", preco: "R$ 3.490,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://planoscelular.claro.com.br/medias/18373-0-zero-300Wx300H-productCard?context=bWFzdGVyfGltYWdlc3w2NTY1NXxpbWFnZS9wbmd8YUdabEwyZzJOUzg1TWpZM05EWXlNVGMyTnprNEx6RTRNemN6WHpCZmVtVnliMTh6TURCWGVETXdNRWhmY0hKdlpIVmpkRU5oY21RfDRkOGU5OGIxZjY0YWEzNGYyZWM2M2JlZTFhNjZiYTEwNWIwOTk0MmJlM2ExZTFiY2IzZTFjZDgzOWFmOWNlNDk" },
+    { nome: "iPhone 14 Pro 512GB", preco: "R$ 3.790,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://www.myg.in/images/thumbnails/300/300/detailed/101/s_ayea-6q-removebg-preview.png.png" },
+    { nome: "iPhone 14 Pro Max 128GB", preco: "R$ 4.990,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-14-pro-max-dourado-.png" },
+    { nome: "iPhone 14 Pro Max 256GB", preco: "R$ 4.290,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://planoscelular.claro.com.br/medias/18393-0-zero-300Wx300H-productCard?context=bWFzdGVyfGltYWdlc3w2NTY1NXxpbWFnZS9wbmd8YUdaakwyZ3hZeTg1TWpZM05Ea3dPVGM1T0Rjd0x6RTRNemt6WHpCZmVtVnliMTh6TURCWGVETXdNRWhmY0hKdlpIVmpkRU5oY21RfDJhMTE3MmU5ODg4N2Q5MWM0MGY5MjA1MWM2MTQ4ZTAzOTYzOGMyNzlhOTk4ODdlMWMzYjQyZjY5NmYxYTExNDU" },
 
     // --- iPhone 15 ---
     { nome: "iPhone 15 128GB", preco: "R$ 3.390,00", cores: "Verde, Preto, Azul, Rosa", img: "https://meuimportadors.com/wp-content/uploads/2023/10/iPhone-15-Azul-768x768-1.png" },
-    { nome: "iPhone 15 Pro 128GB", preco: "R$ 4.390,00", cores: "Branco, Azul, Preto, Natural", img: "https://reidocelular.com.br/wp-content/uploads/2025/12/Sem-2024-11-09T063312.448.png" },
-    { nome: "iPhone 15 Pro 256GB", preco: "R$ 4.690,00", cores: "Branco, Azul, Preto, Natural", img: "https://www.iplace.com.br/file/general/iplace-modelos-iphone-15-rosa.png" },
-    { nome: "iPhone 15 Pro Max 256GB", preco: "R$ 5.390,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-15-black.png?v=cc5784d1" },
+    { nome: "iPhone 15 Pro 128GB", preco: "R$ 4.390,00", cores: "Branco, Azul, Preto, Natural", img: "https://t.ctcdn.com.br/sAyu7updaGg4l4fBKQCs5yh72I4=/fit-in/600x600/filters:fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i798969.png" },
+    { nome: "iPhone 15 Pro 256GB", preco: "R$ 4.690,00", cores: "Branco, Azul, Preto, Natural", img: "https://m.media-amazon.com/images/G/32/apple/NPI/Q3_23/Family_Stripe/Iphone/AMZ_Family_Stripe_iPhone_15_pro._CB578022713_.png" },
+    { nome: "iPhone 15 Pro Max 256GB", preco: "R$ 5.390,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-15-pro-max-tecnoblog-titanio-azul.png" },
     { nome: "iPhone 15 Pro Max 512GB", preco: "R$ 5.590,00", cores: "Branco, Roxo, Grafite, Gold", img: "https://conteudo.imguol.com.br/c/noticias/e2/2023/10/05/iphone-15-pro-transoarente-1696507867172_v2_300x420.png" },
 
     // --- LACRADOS / NOVOS ---
