@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Indica onde o robô encontra o mapa do site (ajuste quando tiver um sitemap)
-Sitemap: https://gm-tech-roan.vercel.app/
