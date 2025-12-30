@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>CATÁLOGO COMPLETO | GM TECH</title>
     
-    <meta name="description" content="Compre seu iPhone na GM TECH. Garantia total, melhores preços e parcelamento. Localizados na Rua Passo Fundo, 1669 - Jardim Coqueiro.">
+    <meta name="description" content="Compre seu iPhone na GM TECH. Garantia total, melhores preços e parcelamento.">
+    <meta name="keywords" content="iPhone, Apple, GM TECH, Celulares, São Paulo">
     
-    <meta name="keywords" content="iPhone, Apple, GM TECH, Jardim Coqueiro, iPhone barato, iPhone 11, iPhone 15, Celulares">
-    
-    <meta property="og:title" content="GM TECH - Especialista em iPhones">
-    <meta property="og:description" content="Confira nossas ofertas de iPhones com garantia e procedência.">
-    <meta property="og:image" content="assets/img/logo.jpg">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -39,7 +34,7 @@
 
     <section class="container" style="padding-top: 40px; text-align: center;">
         <h1 class="section-title">Nossos Produtos</h1>
-        <p style="color: #888;">Escolha seu modelo, preencha seus dados e finalize no WhatsApp.</p>
+        <p style="color: #888;">Selecione a cor desejada e finalize no WhatsApp.</p>
     </section>
 
     <section class="container">
@@ -49,6 +44,7 @@
                 <input type="text" id="inputBusca" placeholder="Qual iPhone você procura?" onkeyup="filtrarProdutos()">
             </div>
         </div>
+        
         <div id="lista-produtos" class="product-grid" style="padding-top: 30px;">
             </div>
     </section>
@@ -73,14 +69,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Cor Preferida (se houver):</label>
-                    <input type="text" id="cliente-cor" placeholder="Ex: Preto Espacial">
+                    <label>Cor Selecionada:</label>
+                    <input type="text" id="cliente-cor" placeholder="Selecione nas bolinhas ou digite aqui" required>
                 </div>
 
                 <div class="form-group">
                     <label>Forma de Pagamento:</label>
                     <select id="cliente-pagamento">
-                        <option value="Pix">Pix</option>
+                        <option value="Pix">Pix (Desconto Especial)</option>
                         <option value="Cartão até 12x">Cartão de Crédito (até 12x)</option>
                         <option value="Dinheiro">Dinheiro / Presencial</option>
                     </select>
@@ -97,34 +93,7 @@
         <div class="container footer-content">
             <div class="footer-column">
                 <h3>GM TECH</h3>
-                <p>Sua referência em produtos Apple. Garantia, procedência e o atendimento que você merece.</p>
-                <br>
-                <a href="https://www.instagram.com/gmtech.iphones" target="_blank" class="btn-instagram">
-                    <i class="fab fa-instagram"></i> Siga no Instagram
-                </a>
-            </div>
-
-            <div class="footer-column">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
-                    <li><a href="produtos.html"><i class="fas fa-chevron-right"></i> Ver iPhones</a></li>
-                    <li><a href="contato.html"><i class="fas fa-chevron-right"></i> Localização</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Onde Estamos</h3>
-                <ul class="contact-info">
-                    <li>
-                        <i class="fab fa-whatsapp"></i> 
-                        <span>(11) 94158-3429<br><small>Atendimento Online</small></span>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>R. Passo Fundo, 1669<br>Jardim Coqueiro<br>São Paulo - SP</span>
-                    </li>
-                </ul>
+                <p>Sua referência em produtos Apple. Garantia, procedência e qualidade.</p>
             </div>
         </div>
         <div class="copyright">
@@ -134,8 +103,9 @@
 
     <script src="assets/js/produtos-data.js"></script> 
     <script src="assets/js/script.js"></script>
+    
     <a href="https://wa.me/5511941583429" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-whatsapp"></i>
     </a>
 </body>
 </html>

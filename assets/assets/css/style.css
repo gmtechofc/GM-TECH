@@ -1,7 +1,7 @@
 /* --- Variáveis de Cores (Baseado na sua Logo) --- */
 :root {
-    --primary-color: #FFD700; /* Amarelo Ouro (Similar ao M e TECH do logo) */
-    --bg-dark: #121212;       /* Fundo quase preto (Melhor que preto puro) */
+    --primary-color: #FFD700; /* Amarelo Ouro */
+    --bg-dark: #121212;       /* Fundo quase preto */
     --bg-card: #1E1E1E;       /* Fundo dos cartões de produto */
     --text-light: #F5F5F5;    /* Texto branco/cinza claro */
     --text-gray: #A0A0A0;     /* Textos secundários */
@@ -33,9 +33,9 @@ ul { list-style: none; }
 
 /* --- Cabeçalho --- */
 .header {
-    background-color: rgba(18, 18, 18, 0.95); /* Leve transparência */
+    background-color: rgba(18, 18, 18, 0.95);
     padding: 15px 0;
-    position: sticky; /* Menu fica fixo ao rolar */
+    position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--primary-color);
@@ -48,7 +48,7 @@ ul { list-style: none; }
 }
 
 .logo img {
-    height: 50px; /* Ajuste conforme necessário */
+    height: 50px;
     border-radius: 5px;
 }
 
@@ -69,13 +69,13 @@ ul { list-style: none; }
 }
 
 .mobile-menu-icon {
-    display: none; /* Escondido no PC */
+    display: none;
     font-size: 1.5rem;
     color: var(--primary-color);
     cursor: pointer;
 }
 
-/* --- Hero Section (Banner Principal) --- */
+/* --- Hero Section --- */
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/hero-bg.jpg');
@@ -137,6 +137,9 @@ ul { list-style: none; }
     padding: 20px;
     text-align: center;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card:hover {
@@ -144,33 +147,76 @@ ul { list-style: none; }
     border-color: var(--primary-color);
 }
 
-.product-image img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: contain;
+/* --- AJUSTE DE PADRONIZAÇÃO DE IMAGEM --- */
+.product-image {
+    height: 250px; /* Altura fixa para todos os cartões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a foto não estique e caiba no espaço */
+    transition: opacity 0.3s ease;
+}
+
+/* --- SELETOR DE CORES (BOLINHAS) --- */
+.color-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 15px;
+    flex-wrap: wrap;
+}
+
+.color-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.2s;
+}
+
+.color-dot:hover {
+    transform: scale(1.2);
+}
+
+.color-dot.selected {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 8px var(--primary-color);
 }
 
 .product-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 .price {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .btn-buy {
-    display: inline-block;
-    background-color: #25D366; /* Verde WhatsApp */
+    background-color: #25D366;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     width: 100%;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn-buy:hover {
@@ -199,16 +245,15 @@ ul { list-style: none; }
 
 /* --- Footer Premium --- */
 footer {
-    background-color: #0a0a0a; /* Quase preto */
+    background-color: #0a0a0a;
     border-top: 4px solid var(--primary-color);
     padding: 70px 0 30px;
     color: #b0b0b0;
-    font-size: 0.95rem;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas automáticas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
     margin-bottom: 40px;
 }
@@ -218,7 +263,6 @@ footer {
     font-size: 1.3rem;
     margin-bottom: 25px;
     font-weight: 700;
-    letter-spacing: 1px;
     border-left: 3px solid var(--primary-color);
     padding-left: 15px;
 }
@@ -241,7 +285,6 @@ footer {
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 15px;
-    line-height: 1.5;
 }
 
 .contact-info i {
@@ -249,23 +292,16 @@ footer {
     margin-top: 4px;
 }
 
-/* Botão Instagram */
 .btn-instagram {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white !important;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 30px;
     font-weight: bold;
     margin-top: 10px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-.btn-instagram:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
 }
 
 .copyright {
@@ -276,19 +312,17 @@ footer {
     opacity: 0.7;
 }
 
-/* --- Estilo do Modal de Pré-Compra --- */
+/* --- Modal --- */
 .modal-overlay {
-    display: none; /* Escondido por padrão */
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
     z-index: 2000;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
@@ -296,17 +330,15 @@ footer {
     padding: 30px;
     border-radius: 15px;
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
     border: 1px solid var(--primary-color);
     position: relative;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    text-align: center;
 }
 
-.modal-header h2 { color: var(--primary-color); margin-bottom: 20px; }
 .close-modal {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 15px; right: 20px;
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
@@ -323,115 +355,44 @@ footer {
     color: #fff;
     outline: none;
 }
-.form-group input:focus { border-color: var(--primary-color); }
 
-.btn-submit {
-    width: 100%;
-    padding: 15px;
-    background-color: #25D366;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-.btn-submit:hover { background-color: #1ebc57; }
-
-/* --- Responsividade (Celular) --- */
+/* --- Responsividade --- */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none; /* Esconde menu padrão */
+        display: none;
         position: absolute;
-        top: 70px;
-        left: 0;
+        top: 70px; left: 0;
         width: 100%;
         background-color: var(--bg-dark);
-        text-align: center;
         padding: 20px 0;
         border-bottom: 2px solid var(--primary-color);
+        z-index: 100;
     }
 
-    .nav-menu.active {
-        display: block; /* Mostra quando clica no ícone */
-    }
+    .nav-menu.active { display: block; }
+    .nav-menu ul { flex-direction: column; gap: 15px; }
+    .mobile-menu-icon { display: block; }
 
-    .nav-menu ul {
-        flex-direction: column;
-    }
-
-    .mobile-menu-icon {
-        display: block; /* Mostra o ícone de hambúrguer */
-    }
-
-    .hero h1 { font-size: 1.2rem; }
+    .hero h1 { font-size: 1.8rem; }
     .hero p { font-size: 1rem; }
     
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
-/* Efeito de entrada suave para o modal */
-.modal-overlay {
-    transition: opacity 0.3s ease;
-}
-
-.modal-content {
-    animation: zoomIn 0.3s ease;
-}
-
-@keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-/* Deixar o seletor de pagamento mais elegante */
-select#cliente-pagamento {
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 15px) center;
-}
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #128c7e;
-    color: #fff;
-}
-
+/* --- Busca --- */
 .search-container {
     position: relative;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .search-container i {
     position: absolute;
-    left: 15px;
-    top: 50%;
+    left: 15px; top: 50%;
     transform: translateY(-50%);
     color: var(--primary-color);
 }
@@ -446,13 +407,66 @@ select#cliente-pagamento {
 }
 #inputBusca:focus { border-color: var(--primary-color); }
 
-.product-image {
-    background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%);
-    background-size: 200% 100%;
-    animation: loading 1.5s infinite;
+.whatsapp-float {
+    position: fixed;
+    width: 60px; height: 60px;
+    bottom: 40px; right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: 0.3s;
 }
 
-@keyframes loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+/* --- Botão de Envio do Modal (WhatsApp) --- */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #25D366; /* Verde oficial WhatsApp */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-submit i {
+    font-size: 1.4rem;
+}
+
+.btn-submit:hover {
+    background-color: #1ebc57;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+    transform: scale(0.98); /* Efeito de apertar o botão */
+}
+
+/* Ajuste extra para o campo de texto do modal no mobile */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .btn-submit {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
