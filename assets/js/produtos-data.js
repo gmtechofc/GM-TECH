@@ -188,7 +188,7 @@ const produtosLista = [
     },
     { 
         nome: "iPhone 14 Pro Max 128GB", 
-        preco: "R$ 4.990,00", 
+        preco: "R$ 4.090,00", 
         cores: "Roxo-Profundo, Dourado, Prateado, Preto-Espacial", 
         img: "https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-14-pro-max-dourado-.png",
         imagensPorCor: {
@@ -370,4 +370,5 @@ const produtosLista = [
         preco: "R$ 2.890,00", 
         img: "https://kitus.com.br/wp-content/uploads/2025/10/15383192437-ipad-11-a16-128gb-prata-4.png",
     }
+
 ];
